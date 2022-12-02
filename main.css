@@ -9,11 +9,10 @@
 * {
   padding: 0;
   margin: 0;
-  /* -webkit-box-sizing: border-box; */
   box-sizing: border-box;
 }
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 a {
   text-decoration: none;
@@ -22,6 +21,13 @@ img {
   width: 100%;
   display: block;
 }
+
+::placeholder {
+  font-size: 18px;
+  opacity: 0.5;
+  font-style: italic;
+}
+
 .wrapper {
   min-height: 100vh;
   background-color: var(--dark-color);
@@ -73,12 +79,12 @@ img {
   position: relative;
 }
 .search-element h3 {
-  -ms-flex-item-align: center;
+  /* -ms-flex-item-align: center; */
   align-self: center;
   margin-right: 1rem;
   font-size: 2rem;
   color: #fff;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 1.5rem;
 }
 .search-element .form-control {
